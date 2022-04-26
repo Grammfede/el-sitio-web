@@ -277,7 +277,7 @@ margin-bottom: 30px;
     color: #2c3e50;
 }
 .fooder{
-    background-color:rgb(114, 114, 114) ;
+    background-color:rgb(255, 255, 255) ;
 }
 .colum1{
     color: rgb(0, 0, 0);
@@ -302,8 +302,3 @@ grid-template-areas:
      "main"
      "fooder";
 }
-@media (min-width:600px){
-    .grid-container{
-    }
-}
-
