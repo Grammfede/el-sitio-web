@@ -7,6 +7,7 @@
     <title>Cortimax</title>
     <link rel="shortcut icon" href="../assets/img/favi.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/contactos.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
@@ -26,20 +27,37 @@
         <li><a href="../paginas/trabajos.html">trabajos</a></li>
     </ul>
 </nav>
-     <form>
-         <label for="nombre">Nombre</label>
-         <input name="nombre">
-         <label for="localidad">localidad</label>
-         <input name="empresa">
-         <label for="telefono">telefono</label>
-         <input name="telefono">
-         <label for="email">email</label>
-         <input type="email">
-         <label for="nombre">¿Que necesitas cotizar?</label>
-         <textarea name="opinion"></textarea>
-
-         <input type="submit" value="Pedir cotizacion">
-     </form>
+<div class="form">
+<div class="col-lg-4">
+    <div class="suscribe animated fadeInRight">
+        <h3>PEDÍ TU PRESUPUESTO</h3>
+        <p class="subtitle">Un asesor te contactará a la brevedad</p> 
+        <form class="jotform-form" action="" method="post" accept-charset="utf-8" onsubmit="">
+          <input type="hidden" name="formID" value="82955229384670">
+          <div class="form-group">
+          <input type="text" class="form-control" id="fullName" name="q3_nombre" placeholder="Nombre completo" required="">
+          </div>
+          <div class="form-group">
+          <input type="email" class="form-control" id="email" name="q4_email" placeholder="Email" required="">
+          </div>
+          <div class="form-group">
+          <input type="tel" class="form-control" id="phone" name="q5_telefono" placeholder="Teléfono" required="">
+          </div>
+          <div class="form-group">
+          <input type="text" class="form-control" id="localidad" name="q7_localidad" placeholder="Localidad" required="">
+          </div>
+          <div class="form-group">
+          <textarea class="form-control" input="" type="text" id="message" placeholder="¿Qué necesitás cotizar?" name="q6_consulta" style="padding-bottom:0px" required=""></textarea>
+          </div>                      
+          <button type="submit" id="input_2" class="btn btn-default">PEDIR COTIZACION <i class="icon-down-circled"></i></button>
+          <input type="hidden" id="simple_spc" name="simple_spc" value="82955229384670-82955229384670">
+          <script type="text/javascript">
+          document.getElementById("si" + "mple" + "_spc").value = "82955229384670-82955229384670";
+          </script>
+        </form>
+    </div>
+</div>
+</div>
      <footer> 
         <div class="containerbody">
             <div class="colum1">
@@ -63,6 +81,6 @@
                Todos los derechos reservados</div>
        </div>
        </footer>
-
+       <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
